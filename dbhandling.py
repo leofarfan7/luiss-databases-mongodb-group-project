@@ -134,4 +134,3 @@ def reset_db(port=27017):
         for database in client.list_databases():
             if database["name"] == "popular_videogames":
                 client.drop_database("popular_videogames")
-                print("Existing database has been removed successfully.")
